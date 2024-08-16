@@ -7,21 +7,15 @@ def bubble_sort(array)
     
       if index < index_end
         if array[index] > array[index + 1]
-          a = array[index]
-          b = array[index + 1]
-          array[index] = b
-          array[index + 1] = a
+          array[index], array[index + 1] = array[index + 1], array[index]
           check = 0
         end
       else
         check += 1
       end
-      
     }
   end
   puts array
-
-
 end
 
 bubble_sort([4,3,78,2,0,2,60,24])
